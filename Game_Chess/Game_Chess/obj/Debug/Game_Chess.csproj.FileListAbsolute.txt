@@ -1,0 +1,10 @@
+C:\Users\Tan Vy\Desktop\cautrucdulieu\Game_Chess\Game_Chess\bin\Debug\Game_Chess.exe.config
+C:\Users\Tan Vy\Desktop\cautrucdulieu\Game_Chess\Game_Chess\bin\Debug\Game_Chess.exe
+C:\Users\Tan Vy\Desktop\cautrucdulieu\Game_Chess\Game_Chess\bin\Debug\Game_Chess.pdb
+C:\Users\Tan Vy\Desktop\cautrucdulieu\Game_Chess\Game_Chess\obj\Debug\Game_Chess.csprojAssemblyReference.cache
+C:\Users\Tan Vy\Desktop\cautrucdulieu\Game_Chess\Game_Chess\obj\Debug\Game_Chess.Properties.Resources.resources
+C:\Users\Tan Vy\Desktop\cautrucdulieu\Game_Chess\Game_Chess\obj\Debug\Game_Chess.csproj.GenerateResource.cache
+C:\Users\Tan Vy\Desktop\cautrucdulieu\Game_Chess\Game_Chess\obj\Debug\Game_Chess.csproj.CoreCompileInputs.cache
+C:\Users\Tan Vy\Desktop\cautrucdulieu\Game_Chess\Game_Chess\obj\Debug\Game_Chess.exe
+C:\Users\Tan Vy\Desktop\cautrucdulieu\Game_Chess\Game_Chess\obj\Debug\Game_Chess.pdb
+C:\Users\Tan Vy\Desktop\cautrucdulieu\Game_Chess\Game_Chess\obj\Debug\chess1.Form1.resources
