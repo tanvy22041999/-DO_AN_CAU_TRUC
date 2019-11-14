@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace chess1
+namespace CoVuaGame
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace chess1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new ChessPanel());
         }
     }
 }

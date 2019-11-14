@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Game_Chess.Properties
+namespace CoVuaGame.Properties
 {
 
 

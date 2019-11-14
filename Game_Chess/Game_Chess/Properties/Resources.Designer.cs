@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Game_Chess.Properties {
+namespace CoVuaGame.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Game_Chess.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Game_Chess.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CoVuaGame.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,16 +57,6 @@ namespace Game_Chess.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap banco {
-            get {
-                object obj = ResourceManager.GetObject("banco", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -93,9 +83,9 @@ namespace Game_Chess.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap king {
+        internal static System.Drawing.Bitmap King {
             get {
-                object obj = ResourceManager.GetObject("king", resourceCulture);
+                object obj = ResourceManager.GetObject("King", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,46 +156,6 @@ namespace Game_Chess.Properties {
         internal static System.Drawing.Bitmap RookWhite {
             get {
                 object obj = ResourceManager.GetObject("RookWhite", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tải_xuống {
-            get {
-                object obj = ResourceManager.GetObject("tải xuống", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tải_xuống__1_ {
-            get {
-                object obj = ResourceManager.GetObject("tải xuống (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tải_xuống__2_ {
-            get {
-                object obj = ResourceManager.GetObject("tải xuống (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tải_xuống__3_ {
-            get {
-                object obj = ResourceManager.GetObject("tải xuống (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
