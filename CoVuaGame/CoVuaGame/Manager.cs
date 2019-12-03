@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace CoVuaGame
 {
     public class Manager
@@ -455,7 +456,27 @@ namespace CoVuaGame
                     stackUndo.Push(infoUndoSrc);
                     stackUndo.Push(infoUndoDes);
 
+                    int x = GetChess(Matrix, sourceButton).Y - GetChess(Matrix, desnitationButton).Y;
                     Move(Matrix, sourceButton, desnitationButton);
+
+                    
+                    if (x==2 && (desnitationButton.Name=="B_K" || desnitationButton.Name=="W_K"))
+                    {
+                        Point point = new Point();
+
+                        point = GetChess(Matrix, desnitationButton);
+                        
+                        Move(Matrix, Matrix[point.X][point.Y-2],Matrix[point.X][point.Y+1]);
+                    }
+                    else if(x==-2&& (desnitationButton.Name == "B_K" || desnitationButton.Name == "W_K"))
+                    {
+                        Point point = new Point();
+
+                        point = GetChess(Matrix, desnitationButton);
+
+                        Move(Matrix, Matrix[point.X][point.Y + 2], Matrix[point.X][point.Y - 1]);
+                    }
+                    
 
                     break;
                 case "K":
@@ -515,15 +536,13 @@ namespace CoVuaGame
                     }
 
                     Kill(Matrix, sourceButton, desnitationButton);
-                    if(indexp1 == -9)
+                    if (indexp1 == -9)
                     {
                         MessageBox.Show("Player 1 You Win ");
-                        break;
                     }
-                    else if (indexp2==-10&&indexp1<0)
+                    else if (indexp2 == -10 && indexp1 == -9)
                     {
                         MessageBox.Show("Player 2 You Win ");
-                        break;
                     }
                     break;
                 default:

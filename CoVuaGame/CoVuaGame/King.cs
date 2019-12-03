@@ -27,31 +27,46 @@ namespace CoVuaGame
                                 if (point.X == 7||point.X==0)//nhap thanh
                                 {
 
-                                     for(int go=0;go<3;go++)
+                                     for(int go=0;go<=4;go++)
                                 {
                                     InfoStack innt = new InfoStack(Matrix[point.X][point.Y + A[go]].BackColor,
                                      Matrix[point.X][point.Y + A[go]].Name, point.X, point.Y + A[go]);
                                     Manager.stackInfo.Push(innt);
-                                    if (Matrix[point.X][point.Y +A[go]].Name=="NULL"&& (point.Y + A[go])<4)// nhap thanh xa
-                                      {
-                                               dem++;
-                                        if (dem == 3)
-                                        {
-                                         
-                                            Matrix[point.X ][point.Y -2].BackColor = Color.LightBlue;
-                                            Matrix[point.X][point.Y -2].Name = "A";
-                                        }
-                                      }
-                                     else if(Matrix[point.X][point.Y + A[go]].Name == "NULL" && (point.Y + A[go]) >4)// nhap thanh gan
+                                    if (point.Y + A[go]<4 && Matrix[point.X][point.Y + A[go]].Name == "NULL")// nhap thanh xa trai
                                     {
                                         dem++;
-                                        if (dem == 2)
+                                        if (dem == 3 && Matrix[point.X][point.Y - 3].Name== "W_R")
+                                        {
+                                        
+                                            Matrix[point.X][point.Y - 2].BackColor = Color.LightBlue;
+                                            Matrix[point.X][point.Y - 2].Name = "A";
+                                        }
+                                        else if (dem == 3 && Matrix[point.X][point.Y - 3].Name == "B_R")
                                         {
 
-                                            Matrix[point.X][point.Y + A[go]].BackColor = Color.LightBlue;
-                                            Matrix[point.X][point.Y + A[go]].Name = "A";
+                                            Matrix[point.X][point.Y - 2].BackColor = Color.LightBlue;
+                                            Matrix[point.X][point.Y - 2].Name = "A";
+                                        }
+
+
+                                    }
+                                    else if (point.Y + A[go]>4 && Matrix[point.X][point.Y + A[go]].Name == "NULL")// nhap thanh gan
+                                    {
+                                        dem++;
+                                        if (dem == 2&& Matrix[point.X][point.Y + 3].Name == "W_R")
+                                        {
+
+                                            Matrix[point.X][point.Y + 2].BackColor = Color.LightBlue;
+                                            Matrix[point.X][point.Y + 2].Name = "A";
+                                        }
+                                        else if (dem == 2&&Matrix[point.X][point.Y +3].Name == "B_R")
+                                        {
+
+                                            Matrix[point.X][point.Y + 2].BackColor = Color.LightBlue;
+                                            Matrix[point.X][point.Y + 2].Name = "A";
                                         }
                                     }
+
 
                                 }
                                 }
