@@ -10,10 +10,8 @@ namespace CoVuaGame
 {
     public abstract class GeneralMethods
     {
-        public void CanMove(List<List<Button>> Matrix, Point point)
-        { }
-        public void CanKill(List<List<Button>> Matrix, Point pointSource)
-        { }
+        public abstract void CanMove(List<List<Button>> Matrix, Point point);
+
         public bool IsTeamMate(string btnName1, string btnName2)
         {
             btnName1 = btnName1.Substring(0, 1);

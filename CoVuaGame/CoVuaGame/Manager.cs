@@ -474,10 +474,8 @@ namespace CoVuaGame
 
                         point = GetChess(Matrix, desnitationButton);
 
-                        Move(Matrix, Matrix[point.X][point.Y + 2], Matrix[point.X][point.Y - 1]);
+                        Move(Matrix, Matrix[point.X][point.Y+1], Matrix[point.X][point.Y - 1]);
                     }
-                    
-
                     break;
                 case "K":
                     //Gán đích chuẩn bị thay thế
@@ -539,10 +537,12 @@ namespace CoVuaGame
                     if (indexp1 == -9)
                     {
                         MessageBox.Show("Player 1 You Win ");
+                        ChessBoard.Enabled = false;
                     }
                     else if (indexp2 == -10 && indexp1 == -9)
                     {
                         MessageBox.Show("Player 2 You Win ");
+                        ChessBoard.Enabled = false;
                     }
                     break;
                 default:

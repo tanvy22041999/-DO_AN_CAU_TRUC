@@ -10,7 +10,7 @@ namespace CoVuaGame
 {
     class Knight:GeneralMethods
     {
-        public new void CanMove(List<List<Button>> Matrix, Point point)
+        public override void CanMove(List<List<Button>> Matrix, Point point)
         {
             int[] A = { 2, 2, 1, 1, -1, -1, -2, -2 };
             int[] B = { -1, 1, -2, 2, -2, 2, - 1, 1 };

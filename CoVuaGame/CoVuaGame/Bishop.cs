@@ -10,7 +10,7 @@ namespace CoVuaGame
 {
     public class Bishop : GeneralMethods
     {
-        public new void CanMove(List<List<Button>> Matrix, Point point)
+        public override void CanMove(List<List<Button>> Matrix, Point point)
         {
             int i;
             for (i = 1; i <=7; i++)//len phai

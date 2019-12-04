@@ -9,8 +9,8 @@ using System.Windows.Forms;
 namespace CoVuaGame
 {
     class Rook:GeneralMethods
-    { 
-        public void CanMove(List<List<Button>> Matrix, Point point)
+    {
+        public override void CanMove(List<List<Button>> Matrix, Point point)
         {
             int i;
             if (point.X - 1 >= 0)

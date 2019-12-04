@@ -10,7 +10,7 @@ namespace CoVuaGame
 {
     class Queen:GeneralMethods
     {
-        public void CanMove(List<List<Button>> Matrix, Point point)
+        public override void CanMove(List<List<Button>> Matrix, Point point)
         {
             int i;
             if (point.X - 1 >= 0)
