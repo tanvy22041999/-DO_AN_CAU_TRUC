@@ -12,12 +12,6 @@ namespace CoVuaGame
     class Trooper:GeneralMethods
     {
         int isFirstMove = 2;
-        public Trooper()
-        {
-           
-           
-        }
-
         public override void CanMove(List<List<Button>> Matrix, Point point)
         {
             if ((point.X == 6 && Matrix[point.X][point.Y].Name == "W_T")|| (point.X == 1 && Matrix[point.X][point.Y].Name == "B_T"))

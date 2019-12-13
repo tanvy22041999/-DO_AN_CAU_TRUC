@@ -64,8 +64,8 @@ namespace CoVuaGame
 
         public int buttonColor = 1;
 
-        public static Stack<InfoStack> stackInfo = new Stack<InfoStack>();
-        public static Stack<InfoUndo> stackUndo = new Stack<InfoUndo>();
+        public static StackCoVua<InfoStack> stackInfo = new StackCoVua<InfoStack>();
+        public static StackCoVua<InfoUndo> stackUndo = new StackCoVua<InfoUndo>();
 
         public static string TypeChess;
 
@@ -143,7 +143,7 @@ namespace CoVuaGame
             ChessBoard.Location = new Point(280, 40);
         }
 
-        private Point GetChess(List<List<Button>> Matrix, Button button)
+        private Point GetChess(List<List<Button>> Matrix, Button button)//lu giu toa do ban co
         {
             int row = Convert.ToInt32(button.Tag);
             int col = Matrix[row].IndexOf(button);
@@ -297,7 +297,7 @@ namespace CoVuaGame
             Matrix[pointSource.X][pointSource.Y].BackgroundImage = null;
             Matrix[pointSource.X][pointSource.Y].Name = "NULL";
 
-            //Change chess if that is Trooper
+            //Change r if that is Trooper
             if (Matrix[pointDesnitation.X][pointDesnitation.Y].Name.Substring(2, 1) == "T")
             {
                 ChangeChess(Matrix[pointDesnitation.X][pointDesnitation.Y], pointDesnitation.X);
@@ -360,7 +360,7 @@ namespace CoVuaGame
             }
         }
 
-        public string ChangePlayer()
+        public string ChangePlayer()//ham xet xen ke cua nguoi choi
         {
             CurrentPlayer = (CurrentPlayer == "W") ? "B" : "W";
             return CurrentPlayer;
@@ -536,12 +536,12 @@ namespace CoVuaGame
                     Kill(Matrix, sourceButton, desnitationButton);
                     if (indexp1 == -9)
                     {
-                        MessageBox.Show("Player 1 You Win ");
+                        MessageBox.Show("Player 1 You Win ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         ChessBoard.Enabled = false;
                     }
                     else if (indexp2 == -10 && indexp1 == -9)
                     {
-                        MessageBox.Show("Player 2 You Win ");
+                        MessageBox.Show("Player 2 You Win ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         ChessBoard.Enabled = false;
                     }
                     break;
@@ -609,6 +609,7 @@ namespace CoVuaGame
                 }
                 else
                 {
+     
                     if (indexp1 > -1)
                     {
                         PnlPlayer1.Controls.RemoveAt(indexp1);

@@ -35,11 +35,12 @@
             this.pnlFirstPlayer = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlPlayer1 = new System.Windows.Forms.Panel();
+            this.UndoButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.UndoButton1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlSecondPlayer = new System.Windows.Forms.Panel();
-            this.UndoButton = new System.Windows.Forms.Button();
+            this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnlPlayer1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -58,7 +59,8 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openMusicToolStripMenuItem});
+            this.openMusicToolStripMenuItem,
+            this.newGameToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
@@ -109,6 +111,17 @@
             this.pnlPlayer1.Size = new System.Drawing.Size(280, 640);
             this.pnlPlayer1.TabIndex = 2;
             // 
+            // UndoButton
+            // 
+            this.UndoButton.BackgroundImage = global::CoVuaGame.Properties.Resources.undo;
+            this.UndoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.UndoButton.Location = new System.Drawing.Point(79, 378);
+            this.UndoButton.Name = "UndoButton";
+            this.UndoButton.Size = new System.Drawing.Size(75, 55);
+            this.UndoButton.TabIndex = 2;
+            this.UndoButton.UseVisualStyleBackColor = true;
+            this.UndoButton.Click += new System.EventHandler(this.UndoButton_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -150,16 +163,12 @@
             this.pnlSecondPlayer.Size = new System.Drawing.Size(200, 300);
             this.pnlSecondPlayer.TabIndex = 0;
             // 
-            // UndoButton
+            // newGameToolStripMenuItem
             // 
-            this.UndoButton.BackgroundImage = global::CoVuaGame.Properties.Resources.undo;
-            this.UndoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.UndoButton.Location = new System.Drawing.Point(79, 378);
-            this.UndoButton.Name = "UndoButton";
-            this.UndoButton.Size = new System.Drawing.Size(75, 55);
-            this.UndoButton.TabIndex = 2;
-            this.UndoButton.UseVisualStyleBackColor = true;
-            this.UndoButton.Click += new System.EventHandler(this.UndoButton_Click);
+            this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newGameToolStripMenuItem.Text = "NewGame";
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
             // ChessPanel
             // 
@@ -199,5 +208,6 @@
         private System.Windows.Forms.Panel pnlSecondPlayer;
         private System.Windows.Forms.Button UndoButton;
         private System.Windows.Forms.Button UndoButton1;
+        private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
     }
 }

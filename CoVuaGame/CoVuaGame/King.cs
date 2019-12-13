@@ -35,13 +35,13 @@ namespace CoVuaGame
                                     if (point.Y + A[go]<4 && Matrix[point.X][point.Y + A[go]].Name == "NULL")// nhap thanh xa trai
                                     {
                                         dem++;
-                                        if (dem == 3 && Matrix[point.X][point.Y - 3].Name== "W_R")
+                                        if (dem == 3 && Matrix[point.X][point.Y - 4].Name== "W_R")
                                         {
                                         
                                             Matrix[point.X][point.Y - 2].BackColor = Color.LightBlue;
                                             Matrix[point.X][point.Y - 2].Name = "A";
                                         }
-                                        else if (dem == 3 && Matrix[point.X][point.Y - 3].Name == "B_R")
+                                        else if (dem == 3 && Matrix[point.X][point.Y - 4].Name == "B_R")
                                         {
 
                                             Matrix[point.X][point.Y - 2].BackColor = Color.LightBlue;

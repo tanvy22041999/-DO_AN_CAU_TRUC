@@ -55,6 +55,13 @@ namespace CoVuaGame
                 UndoButton1.Enabled = true;
                 UndoButton.Enabled = false;
             }
+            if(PanelChessBoard.Enabled==false)
+            {
+                Form giaodien = new GiaoDien();
+                this.Hide();
+                giaodien.ShowDialog();
+                Application.Exit();
+            }
         }
 
         private void UndoButton_Click(object sender, EventArgs e)
@@ -83,6 +90,13 @@ namespace CoVuaGame
                 UndoButton.Enabled = false;
             }
         }
-     
+
+        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form giaodien = new GiaoDien();
+            this.Hide();
+            giaodien.ShowDialog();
+            Application.Exit();
+        }
     }
 }
